@@ -31,7 +31,7 @@ class produtoRepositorio {
 
     public function cadastrar(Produto $produto)
     {
-        $sql = "INSERT INTO produtos (cod_produto, nome, descricao, preco, imagem, tipo) VALUES (?,?,?,?,?,?)";
+        $sql = "INSERT INTO produtos (nome, descricao, preco, imagem, tipo) VALUES (?,?,?,?,?)";
         $stmt = $this->conn->prepare($sql);
 
         if (!$stmt) {
@@ -39,7 +39,7 @@ class produtoRepositorio {
             die("Ocorreu um erro ao preparar a consulta SQL.");
         }
 
-        $stmt->bind_param("isssss",$produto->getCod_produto(), $produto->getNome(), $produto->getDescricao(), $produto->getPreco(), $produto->getImagem(),$produto->getTipo());
+        $stmt->bind_param("sssss", $produto->getNome(), $produto->getDescricao(), $produto->getPreco(), $produto->getImagem(),$produto->getTipo());
         $stmt->execute();
         $stmt->close();
     }

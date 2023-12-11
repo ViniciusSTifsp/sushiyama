@@ -74,7 +74,7 @@
       <div class="containerinputphp" data-aos="fade-up">
 
         <section class="container-admin-banner">
-          <img src="img/logo-serenatto-horizontal.png" class="logo-admin" alt="logo-serenatto">
+          <img src="../assets/img/logo-serenatto-horizontal.png" class="logo-admin" alt="logo-serenatto">
           <h1>Produto cadastrado com sucesso</h1>
           <img class= "ornaments" src="img/ornaments-coffee.png" alt="ornaments">
       </section>

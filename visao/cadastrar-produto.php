@@ -98,7 +98,7 @@
 
                 <div>
                     <label for="sobremesa">Sobremesa</label>
-                    <input type="radio" id="sobremesa" name="tipo" value="Sobremesa" checked>
+                    <input type="radio" id="sobremesa" name="tipo" value="Sobremesa">
                 </div>
             </div>
             
